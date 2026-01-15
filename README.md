@@ -29,7 +29,7 @@ Companies are listed here if they engage in practices such as:
 
 **Evidence:** Link to job posting or screenshot
 
-**Date Added:** YYYY-MM-DD
+**Date Added:** DD-MM-YYYY
 ```
 
 ## Full List
