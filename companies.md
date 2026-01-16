@@ -25,3 +25,12 @@
 
 **Date Added:** 13-01-2026
 
+## Inov Maldives
+
+**Industry* Creative agency 
+
+**Issues**
+- Job listing do not disclose salary 
+
+**Evidence** [Instagram Ad](https://www.instagram.com/p/DTfQ2i5AHkj)
+
