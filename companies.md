@@ -27,7 +27,7 @@
 
 ## Inov Maldives
 
-**Industry* Creative agency 
+**Industry:** Creative agency 
 
 **Issues**
 - Job listing do not disclose salary 
