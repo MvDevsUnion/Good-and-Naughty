@@ -12,7 +12,11 @@ Companies are listed here if they engage in practices such as:
 - Exploitative pay structures
 
 ## How to Contribute
+submit a [google forms](https://forms.gle/Enugp8JaQbNdPARy9) and we include the company in the list
 
+
+## How to Contribute (Nerd)
+0. https://forms.gle/Enugp8JaQbNdPARy9
 1. Fork this repo
 2. Add the company to `companies.md` using the template below
 3. Submit a pull request with evidence (screenshots, links)
