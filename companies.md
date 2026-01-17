@@ -84,3 +84,45 @@
 
 **Date Added:** 17-01-2026
 
+
+## Oevaali Art Shop
+
+**Industry:** Creative arts 
+
+**Issues**
+- Job listing do not disclose salary 
+
+**Evidence** [Job Listing](https://jobcenter.mv/en/jobs/retail-sales-executive-15)
+
+**Date Added:** 17-01-2026
+
+
+## Tree Top Hospital
+
+**Industry:** Medical
+
+**Issues**
+- Job listing do not disclose salary
+- Privacy related Issues 
+
+**Evidence** 
+- [Job Listing](https://jobcenter.mv/en/jobs/head-nurse-neonatal-intensive-care-unit)
+- [Data Leak](https://whoisfishie.github.io/haveibeenpwnedmv/)
+  
+**Date Added:** 17-01-2026
+
+
+## Amãna Takaful (Maldives) PLC
+
+**Industry:** Insurance
+
+**Issues**
+- Job listing do not disclose salary
+- Privacy Issues
+
+**Evidence** 
+- [Job Listing](https://jobcenter.mv/en/jobs/accountant-62)
+- [Data Leak](https://whoisfishie.github.io/haveibeenpwnedmv/)
+
+**Date Added:** 17-01-2026
+
