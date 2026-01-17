@@ -48,3 +48,39 @@
 
 **Date Added:** 17-01-2026
 
+
+## Manta Aviation Pvt Ltd
+
+**Industry:** Tourism
+
+**Issues**
+- Job listing do not disclose salary 
+
+**Evidence** [Job Listing](https://jobsicle.mv/job/23099)
+
+**Date Added:** 17-01-2026
+
+
+## Chopart Private Limited
+
+**Industry:** Creative agency 
+
+**Issues**
+- Job listing do not disclose salary 
+
+**Evidence** [Job Listing](https://jobsicle.mv/job/23067)
+
+**Date Added:** 17-01-2026
+
+
+## The Mauritius Commercial Bank
+
+**Industry:** Banking
+
+**Issues**
+- Job listing do not disclose salary 
+
+**Evidence** [Job Listing](https://jobsicle.mv/job/23040)
+
+**Date Added:** 17-01-2026
+
