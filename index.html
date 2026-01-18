@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good and Naughty Companies</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    :root {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+      --radius: 0.5rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: hsl(var(--foreground));
+    }
+
+    .filters {
+      max-width: 800px;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filters input,
+    .filters select {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px 16px;
+      font-size: 0.875rem;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .filters input:focus,
+    .filters select:focus {
+      border-color: hsl(var(--ring));
+      box-shadow: 0 0 0 1px hsl(var(--ring));
+    }
+
+    .filters input::placeholder {
+      color: hsl(var(--muted-foreground));
+    }
+
+    .filters select {
+      cursor: pointer;
+    }
+
+    .filters select option {
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .company-card {
+      background-color: hsl(var(--card));
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .company-card:hover {
+      border-color: hsl(var(--muted-foreground));
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .company-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .company-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: calc(var(--radius) - 2px);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      border: 1px solid transparent;
+      transition: background-color 0.2s;
+    }
+
+    .company-badge.good {
+      background-color: hsl(142.1 76.2% 36.3% / 0.15);
+      color: hsl(142.1 76.2% 36.3%);
+      border-color: hsl(142.1 76.2% 36.3% / 0.3);
+    }
+
+    .company-badge.naughty {
+      background-color: hsl(0 72.2% 50.6% / 0.15);
+      color: hsl(0 72.2% 50.6%);
+      border-color: hsl(0 72.2% 50.6% / 0.3);
+    }
+
+    .company-name {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: hsl(var(--card-foreground));
+      flex: 1;
+    }
+
+    .company-name a {
+      color: hsl(var(--card-foreground));
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .company-name a:hover {
+      color: hsl(var(--primary));
+      text-decoration: underline;
+    }
+
+    .company-description {
+      color: hsl(var(--muted-foreground));
+      line-height: 1.6;
+      flex: 1;
+      font-size: 0.875rem;
+    }
+
+    .company-description ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+
+    .company-description li {
+      margin-bottom: 4px;
+    }
+
+    .company-description p {
+      margin-bottom: 8px;
+    }
+
+    .company-description a {
+      color: hsl(var(--primary));
+      text-decoration: underline;
+    }
+
+    .company-description a:hover {
+      color: hsl(var(--muted-foreground));
+    }
+
+    .no-results {
+      text-align: center;
+      color: hsl(var(--muted-foreground));
+      font-size: 1rem;
+      padding: 40px;
+    }
+
+    .loading {
+      text-align: center;
+      color: hsl(var(--muted-foreground));
+      font-size: 1rem;
+      padding: 40px;
+    }
+
+    .alert {
+      background-color: hsl(var(--muted));
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      color: hsl(var(--foreground));
+      font-size: 0.875rem;
+    }
+
+    .alert a {
+      color: hsl(var(--primary));
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .alert a:hover {
+      color: hsl(var(--muted-foreground));
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px 20px;
+      color: hsl(var(--muted-foreground));
+      font-size: 0.875rem;
+      margin-top: 60px;
+      border-top: 1px solid hsl(var(--border));
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: hsl(var(--foreground));
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .empty-section {
+      text-align: center;
+      color: hsl(var(--muted-foreground));
+      padding: 40px;
+      background-color: hsl(var(--muted));
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Company Watch</h1>
+
+      <div class="alert">
+        Have a company to report? <a href="https://forms.gle/Enugp8JaQbNdPARy9" target="_blank" rel="noopener noreferrer">Submit a report here</a>
+      </div>
+
+      <div class="filters">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search companies..."
+          autocomplete="off"
+        >
+        <select id="industryFilter">
+          <option value="">All Industries</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="todaySection" class="section" style="display: none;">
+      <h2 class="section-title">Todays Reports</h2>
+      <div id="todayCardsContainer" class="cards-grid"></div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">All Companies</h2>
+      <div id="cardsContainer" class="cards-grid">
+        <div class="loading">Loading companies...</div>
+      </div>
+    </div>
+
+    <footer>
+      Powered by Mv Devs Union
+    </footer>
+  </div>
+
+  <script>
+    const mdUrl = "https://raw.githubusercontent.com/MvDevsUnion/Good-and-Naughty/main/companies.md";
+    let allCompanies = [];
+
+    function parseMarkdownToCompanies(md) {
+      const companies = [];
+      const sections = md.split(/^##\s+/m).slice(1);
+
+      sections.forEach(section => {
+        const lines = section.trim().split('\n');
+        let nameRaw = lines[0].trim();
+
+        // Extract company name and URL from markdown link format [Name](url)
+        let name = nameRaw;
+        let url = null;
+        const linkMatch = nameRaw.match(/\[(.+?)\]\((.+?)\)/);
+        if (linkMatch) {
+          name = linkMatch[1];
+          url = linkMatch[2];
+        }
+
+        let description = '';
+        let industry = '';
+        let dateAdded = '';
+
+        for (let i = 1; i < lines.length; i++) {
+          const line = lines[i].trim();
+          if (line.startsWith('**Industry:**')) {
+            industry = line.replace('**Industry:**', '').trim();
+          }
+          if (line.startsWith('**Date Added:**')) {
+            dateAdded = line.replace('**Date Added:**', '').trim();
+          }
+          description += lines[i] + '\n';
+        }
+
+        const category = description.toLowerCase().includes('no salary disclosure') ||
+                        description.toLowerCase().includes('salary') ? 'naughty' : 'good';
+
+        companies.push({
+          name: name,
+          url: url,
+          category: category,
+          industry: industry,
+          dateAdded: dateAdded,
+          description: description.trim()
+        });
+      });
+
+      return companies;
+    }
+
+    function createCompanyCard(company) {
+      const card = document.createElement('div');
+      card.className = `company-card ${company.category}`;
+
+      const header = document.createElement('div');
+      header.className = 'company-header';
+
+      const badge = document.createElement('span');
+      badge.className = `company-badge ${company.category}`;
+      badge.textContent = company.category;
+
+      const nameContainer = document.createElement('div');
+      nameContainer.className = 'company-name';
+
+      if (company.url) {
+        const link = document.createElement('a');
+        link.href = company.url;
+        link.textContent = company.name;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        nameContainer.appendChild(link);
+      } else {
+        nameContainer.textContent = company.name;
+      }
+
+      header.appendChild(badge);
+      header.appendChild(nameContainer);
+
+      const description = document.createElement('div');
+      description.className = 'company-description';
+      description.innerHTML = marked.parse(company.description.trim());
+
+      card.appendChild(header);
+      card.appendChild(description);
+
+      return card;
+    }
+
+    function renderCompanies(companies) {
+      const container = document.getElementById('cardsContainer');
+      container.innerHTML = '';
+
+      if (companies.length === 0) {
+        container.innerHTML = '<div class="no-results">No companies found</div>';
+        return;
+      }
+
+      companies.forEach(company => {
+        container.appendChild(createCompanyCard(company));
+      });
+    }
+
+    function populateIndustryFilter() {
+      const industriesSet = new Set();
+
+      allCompanies.forEach(company => {
+        if (company.industry) {
+          // Split by comma and trim each industry
+          company.industry.split(',').forEach(ind => {
+            const trimmed = ind.trim();
+            if (trimmed) industriesSet.add(trimmed);
+          });
+        }
+      });
+
+      const industries = [...industriesSet].sort();
+      const select = document.getElementById('industryFilter');
+
+      industries.forEach(industry => {
+        const option = document.createElement('option');
+        option.value = industry;
+        option.textContent = industry;
+        select.appendChild(option);
+      });
+    }
+
+    function filterCompanies() {
+      const searchTerm = document.getElementById('searchInput').value;
+      const selectedIndustry = document.getElementById('industryFilter').value;
+
+      let filtered = allCompanies;
+
+      if (searchTerm.trim()) {
+        filtered = filtered.filter(company =>
+          company.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          company.description.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      }
+
+      if (selectedIndustry) {
+        filtered = filtered.filter(company => {
+          if (!company.industry) return false;
+          // Check if the selected industry exists in the company's industries (split by comma)
+          const industries = company.industry.split(',').map(i => i.trim());
+          return industries.includes(selectedIndustry);
+        });
+      }
+
+      renderCompanies(filtered);
+    }
+
+    function isToday(dateString) {
+      if (!dateString) return false;
+
+      const today = new Date();
+      const todayStr = today.toISOString().split('T')[0]; // YYYY-MM-DD
+
+      // Convert DD-MM-YYYY to YYYY-MM-DD
+      const dateParts = dateString.split('-');
+      if (dateParts.length === 3) {
+        const reformatted = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
+        const parsedDate = new Date(reformatted);
+
+        if (!isNaN(parsedDate.getTime())) {
+          const parsedStr = parsedDate.toISOString().split('T')[0];
+          return parsedStr === todayStr;
+        }
+      }
+
+      return false;
+    }
+
+    function renderTodayReports(companies) {
+      const todayCompanies = companies.filter(c => isToday(c.dateAdded));
+      const todaySection = document.getElementById('todaySection');
+      const container = document.getElementById('todayCardsContainer');
+
+      if (todayCompanies.length > 0) {
+        todaySection.style.display = 'block';
+        container.innerHTML = '';
+        todayCompanies.forEach(company => {
+          container.appendChild(createCompanyCard(company));
+        });
+      } else {
+        todaySection.style.display = 'none';
+      }
+    }
+
+    document.getElementById('searchInput').addEventListener('input', filterCompanies);
+    document.getElementById('industryFilter').addEventListener('change', filterCompanies);
+
+    fetch(mdUrl)
+      .then(r => r.text())
+      .then(md => {
+        allCompanies = parseMarkdownToCompanies(md);
+        populateIndustryFilter();
+        renderTodayReports(allCompanies);
+        renderCompanies(allCompanies);
+      })
+      .catch(() => {
+        document.getElementById('cardsContainer').innerHTML =
+          '<div class="no-results">Failed to load companies</div>';
+      });
+  </script>
+</body>
+</html>
