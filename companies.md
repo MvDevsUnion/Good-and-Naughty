@@ -126,3 +126,38 @@
 
 **Date Added:** 17-01-2026
 
+## Housing Development Finance Corporation Plc Maldives (HDFC)
+
+**Industry:** Gov
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence** 
+- [Job Listing](https://www.gazette.gov.mv/iulaan/376416)
+
+**Date Added:** 18-01-2026
+
+## State Pharmaceutical & Medical Supply Corporation Ltd
+
+**Industry:** Medical, Gov
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence** 
+- [Job Listing](https://gazette.gov.mv/iulaan/377082)
+
+**Date Added:** 18-01-2026
+
+## Kabowl.mv
+
+**Industry:** Food
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence** 
+- [Job Listing](https://www.tiktok.com/@kabowl.mv/photo/7596189335980920072)
+
+**Date Added:** 18-01-2026
