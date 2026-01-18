@@ -2,6 +2,10 @@
 
 Documenting companies in the Maldives that fail to meet basic standards for job listings and developer treatment.
 
+## Full List
+
+See [companies.md](companies.md)
+
 ## Criteria for Inclusion
 
 Companies are listed here if they engage in practices such as:
@@ -35,7 +39,3 @@ submit a [google forms](https://forms.gle/Enugp8JaQbNdPARy9) and we include the 
 
 **Date Added:** DD-MM-YYYY
 ```
-
-## Full List
-
-See [companies.md](companies.md)
