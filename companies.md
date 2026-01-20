@@ -288,3 +288,16 @@
 - [Job Listing](https://jobsicle.mv/job/23095)
 
 **Date Added:** 19-01-2026
+
+## Ooredoo
+
+**Industry:** Telecom
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://www.ooredoo.mv/career/job-detail?job_id=913)
+
+**Date Added:** 20-01-2026
+
