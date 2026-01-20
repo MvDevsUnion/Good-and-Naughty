@@ -320,9 +320,9 @@
 **Issues**
 - Failure to send agreed offer letter since hiring (since October 2025)
 
-- ⁠Failure to provide any update to my salary for December 2025. (still not received) 
+- ⁠Failure to provide any update on staff salary for December 2025. (still not received) 
 
-- ⁠Failure to communicate on any channels and not giving me any reply since January 2026 for no reason. 
+- ⁠Failure to communicate on any channels and not giving staff any reply since January 2026 for no reason. 
 
 **Evidence**  
 - allegations verified by the Unions after talking to staff 
