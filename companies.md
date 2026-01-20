@@ -301,3 +301,16 @@
 
 **Date Added:** 20-01-2026
 
+## MindCo
+
+**Industry:** Other
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://www.mindco.mv/careers/lead-software-engineer)
+
+**Date Added:** 20-01-2026
+
+
