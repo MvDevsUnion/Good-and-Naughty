@@ -313,4 +313,21 @@
 
 **Date Added:** 20-01-2026
 
+## [INTEGRAL PVT LTD](https://business.egov.mv/BusinessRegistry/ViewDetails/182392?key=574966258)
+
+**Industry:** Other
+
+**Issues**
+- Failure to send agreed offer letter since hiring (since October 2025)
+
+- ⁠Failure to provide any update to my salary for December 2025. (still not received) 
+
+- ⁠Failure to communicate on any channels and not giving me any reply since January 2026 for no reason. 
+
+**Evidence**  
+- allegations verified by the Unions after talking to staff 
+
+**Date Added:** 20-01-2026
+
+
 
