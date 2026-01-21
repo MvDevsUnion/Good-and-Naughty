@@ -315,7 +315,7 @@
 
 ## [INTEGRAL PVT LTD](https://business.egov.mv/BusinessRegistry/ViewDetails/182392?key=574966258)
 
-**Industry:** Other
+**Industry:** Tech
 
 **Issues**
 - Failure to send agreed offer letter since hiring (since October 2025)
@@ -330,4 +330,111 @@
 **Date Added:** 20-01-2026
 
 
+## M.H.A. Private Limited
 
+**Industry:** Retail
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://jobsicle.mv/job/23175)
+
+**Date Added:** 21-01-2026
+
+## Stay Islands Pvt Ltd
+
+**Industry:** Tourism
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://jobcenter.mv/en/jobs/yoga-and-wellness-therapist-2)
+
+**Date Added:** 21-01-2026
+
+## Silver Sands Pvt Ltd
+
+**Industry:** Tourism
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://jobcenter.mv/en/jobs/assistant-boat-captain-44)
+
+**Date Added:** 21-01-2026
+
+## Healthtech Pvt Ltd
+
+**Industry:** Medical
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://jobcenter.mv/en/jobs/manager-6)
+
+**Date Added:** 21-01-2026
+
+## WELLCO PVT LTD
+
+**Industry:** Retail
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://jobcenter.mv/en/jobs/cashier-160)
+
+**Date Added:** 21-01-2026
+
+## FUEL EXPRESS MALDIVES PVT LTD
+
+**Industry:** Energy
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://jobcenter.mv/en/jobs/assistant-captain-lct)
+- [Job Listing](https://jobcenter.mv/en/jobs/assistant-captain-safari-2)
+
+**Date Added:** 21-01-2026
+
+## UpLink Networks
+
+**Industry:** Tech
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://ibay.com.mv/rigger-technician-telecom-tower-o6445165.html?ref=latest)
+
+**Date Added:** 21-01-2026
+
+## Fantasy Pvt. Ltd. & Bakers Fantasy Pvt. Ltd
+
+**Industry:** F&B
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://ibay.com.mv/fantasy-pvt-ltd-bakers-fantasy-pvt-ltd-hiring-now-o6451804.html?ref=latest)
+
+**Date Added:** 21-01-2026
+
+## Eve Clinic
+
+**Industry:** F&B
+
+**Issues**
+- Job listing do not disclose salary
+
+**Evidence**  
+- [Job Listing](https://ibay.com.mv/looking-for-occupational-therapists-physiotherapists-psychologists-o6451922.html?ref=latest)
+
+**Date Added:** 21-01-2026
