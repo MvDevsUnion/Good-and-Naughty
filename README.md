@@ -2,9 +2,12 @@
 
 Documenting companies in the Maldives that fail to meet basic standards for job listings and developer treatment.
 
+
 ## Full List
 
-See [companies.md](companies.md)
+you can check it out at [our website](https://mvdevsunion.github.io/Good-and-Naughty/)
+
+markdown version [companies.md](companies.md)
 
 ## Criteria for Inclusion
 
@@ -20,14 +23,13 @@ submit a [google forms](https://forms.gle/Enugp8JaQbNdPARy9) and we include the 
 
 
 ## How to Contribute (Nerd)
-0. https://forms.gle/Enugp8JaQbNdPARy9
 1. Fork this repo
 2. Add the company to `companies.md` using the template below
 3. Submit a pull request with evidence (screenshots, links)
 
 ## Company Entry Template
 ```
-## [Company Name](https://website.url)
+## [Company Name](https://website.url|Business registry url)
 
 **Industry:** e.g., Banking, Tech, Retail
 
