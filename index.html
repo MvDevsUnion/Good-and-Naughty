@@ -340,8 +340,11 @@
           description += lines[i] + '\n';
         }
 
-        const category = description.toLowerCase().includes('no salary disclosure') ||
-                        description.toLowerCase().includes('salary') ? 'naughty' : 'good';
+
+        const category = 'naughty'; // default
+
+     //   const category = description.toLowerCase().includes('no salary disclosure') ||
+                        //description.toLowerCase().includes('salary') ? 'naughty' : 'good';
 
         companies.push({
           name: name,
@@ -512,3 +515,4 @@
   </script>
 </body>
 </html>
+
