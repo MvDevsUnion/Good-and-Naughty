@@ -438,3 +438,42 @@
 - [Job Listing](https://ibay.com.mv/looking-for-occupational-therapists-physiotherapists-psychologists-o6451922.html?ref=latest)
 
 **Date Added:** 21-01-2026
+
+## Commercial Bank of Maldives Pvt Ltd
+
+**Industry:** Banking
+
+**Issues:**
+- Job listings do not disclose salary
+
+**Evidence:** 
+- [Job Listing](https://jobcenter.mv/en/jobs/executive-officer-business-analystproject-coordinator)
+- [Job Listing](https://jobcenter.mv/en/jobs/executive-officer-information-security)
+
+**Date Added:** 24-01-2026
+
+## WAMCO
+
+**Industry:** Gov
+
+**Issues:**
+- WAMCO has not paid employee pensions in over 14 months
+
+**Evidence:** 
+- [News](https://en.sun.mv/102341)
+- [News](https://adhadhu.com/article/77348)
+  
+**Date Added:** 24-01-2026
+
+## Business Center Corporation (BCC)
+
+**Industry:** Gov
+
+**Issues:**
+- BCC  has not paid employee pensions in over 3 months
+
+**Evidence:** 
+- [News](https://en.sun.mv/102341)
+- [News](https://adhadhu.com/article/77348)
+  
+**Date Added:** 24-01-2026
