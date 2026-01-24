@@ -462,6 +462,7 @@
 **Evidence:** 
 - [News](https://en.sun.mv/102341)
 - [News](https://adhadhu.com/article/77348)
+- [RTI](https://x.com/iharfa/status/2010939333021487150)
   
 **Date Added:** 24-01-2026
 
@@ -475,5 +476,6 @@
 **Evidence:** 
 - [News](https://en.sun.mv/102341)
 - [News](https://adhadhu.com/article/77348)
-  
+- [RTI](https://x.com/iharfa/status/2010939333021487150)
+
 **Date Added:** 24-01-2026
