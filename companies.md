@@ -480,3 +480,14 @@
 - [RTI](https://x.com/iharfa/status/2010939333021487150)
 
 **Date Added:** 24-01-2026
+
+## Island Aviation Services Limited
+**Industry:** Travel
+
+**Issues:**
+- Job listings do not disclose salary
+
+**Evidence:** 
+- [Job Listing](https://gazette.gov.mv/iulaan/378198)
+
+**Date Added:** 26-01-2026
