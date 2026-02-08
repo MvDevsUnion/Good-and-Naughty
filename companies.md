@@ -459,13 +459,16 @@
 
 **Issues:**
 - WAMCO has not paid employee pensions in over 14 months
+- Death of a worker took 2 days to investigate 
 
 **Evidence:** 
 - [News](https://en.sun.mv/102341)
 - [News](https://adhadhu.com/article/77348)
 - [RTI](https://x.com/iharfa/status/2010939333021487150)
+- [News](https://oneonline.mv/116633)
+- [News](https://adhadhu.com/article/78077)
   
-**Date Added:** 24-01-2026
+**Date Added:** 08-02-2026
 
 ## Business Center Corporation (BCC)
 
