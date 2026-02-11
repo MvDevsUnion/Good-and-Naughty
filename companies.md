@@ -494,3 +494,15 @@
 - [Job Listing](https://gazette.gov.mv/iulaan/378198)
 
 **Date Added:** 26-01-2026
+
+## Loopcraft Private Limited
+
+**Industry:** Tech
+
+**Issues:**
+- Job listings do not disclose salary
+
+**Evidence:** 
+- [Job Listing](https://jobsicle.mv/job/graphic-designer-MjM0NzM=)
+
+**Date Added:** 10-02-2026
